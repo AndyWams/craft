@@ -1,16 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
+import { LoadingBarRouterModule } from "@ngx-loading-bar/router";
+import { AppRoutingModule } from "./app-routing.module";
+import { LandingComponent } from "./landing/landing.component";
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./core/header/header.component";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, LandingComponent, HeaderComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    AppRoutingModule,
+    LoadingBarRouterModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
