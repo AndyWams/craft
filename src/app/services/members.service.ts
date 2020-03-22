@@ -8,8 +8,8 @@ import { MembersModel } from "src/app/model/members-model";
   providedIn: "root"
 })
 export class MembersService {
-  // api = "https://api.github.com";
-  api = "https://reqres.in/api/users";
+  // api = "https://api.github.com"; // api from github
+  api = "https://reqres.in/api/users"; //Api from regres.in
   constructor(private _http: HttpClient) {}
 
   getMembers() {

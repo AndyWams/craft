@@ -4,7 +4,8 @@
       <div><img [src]="user.avatar" alt="{{ user.avatar }}" /></div>
       <div>
         <p>
-          {{ user.first_name }} | <span>{{ user.email }}</span>
+          {{ user.first_name }} {{ user.last_name }}
+          <span>{{ user.email }}</span>
         </p>
       </div>
     </div>

@@ -4,7 +4,8 @@
       <div class="card">
         <div class="card-content">
           <label>
-            <a routerLink="/community/users/{{ member.id }}">
+            <!-- routerLink="/community/users/{{ member.id }}" -->
+            <a [routerLink]="['users', member.id]">
               {{ member.first_name }}
               <img [src]="member.avatar" alt="" />
             </a>
