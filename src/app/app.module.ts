@@ -5,7 +5,9 @@ import { LoadingBarRouterModule } from "@ngx-loading-bar/router";
 import { AppRoutingModule } from "./app-routing.module";
 import { LandingComponent } from "./landing/landing.component";
 import { AppComponent } from "./app.component";
+import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from "./core/header/header.component";
+import { MembersService } from "./services/members.service";
 
 @NgModule({
   declarations: [AppComponent, LandingComponent, HeaderComponent],
@@ -13,8 +15,10 @@ import { HeaderComponent } from "./core/header/header.component";
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    LoadingBarRouterModule
+    LoadingBarRouterModule,
+    HttpClientModule
   ],
+  providers: [MembersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

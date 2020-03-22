@@ -1,0 +1,25 @@
+.hero {
+  .container {
+    padding: 1em;
+    margin: 4em 3em;
+  }
+  .card {
+    padding: 1em;
+    border-radius: 12px;
+    width: 310px;
+    height: 400px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    img {
+      width: -webkit-fill-available;
+    }
+    p {
+      color: black;
+      font-weight: bold;
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}

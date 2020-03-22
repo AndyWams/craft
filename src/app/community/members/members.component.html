@@ -1,0 +1,16 @@
+<section class="container">
+  <div class="columns is-multiline" *ngIf="members">
+    <div class="column is-4" *ngFor="let member of members">
+      <div class="card">
+        <div class="card-content">
+          <label>
+            <a routerLink="/community/users/{{ member.id }}">
+              {{ member.first_name }}
+              <img [src]="member.avatar" alt="" />
+            </a>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
