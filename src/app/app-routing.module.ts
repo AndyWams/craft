@@ -5,7 +5,12 @@ import { LandingComponent } from "./landing/landing.component";
 const routes: Routes = [
   {
     path: "",
-    component: LandingComponent
+    component: LandingComponent,
+    pathMatch: "full"
+  },
+  {
+    path: "community",
+    loadChildren: "src/app/community/community.module#CommunityModule"
   }
 ];
 

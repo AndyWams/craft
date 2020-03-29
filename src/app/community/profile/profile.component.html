@@ -1,0 +1,14 @@
+<section class="hero is-fullheight" *ngIf="user">
+  <div class="container">
+    <div class="card">
+      <div><img [src]="user.avatar" alt="{{ user.avatar }}" /></div>
+      <div>
+        <p>
+          {{ user.first_name }} {{ user.last_name }}
+          <span>{{ user.email }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <img [src]="user.avatar" /> -->

@@ -1,0 +1,10 @@
+section.container {
+  padding: 1em;
+  .card {
+    a {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
